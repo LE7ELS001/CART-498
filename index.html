@@ -39,10 +39,6 @@
                 <span>Week 3</span>
             </a>
 
-            <a href="#week-4" class="nav-link">
-                <span class="week-number">04</span>
-                <span>Week 4</span>
-            </a>
 
         </nav>
 
@@ -235,15 +231,19 @@
 
                 <div class="entry-meta">
                     <span>WEEK 03</span>
-                    <span>SEP 22 — SEP 28</span>
+                    <span>SEP 22 - SEP 28</span>
                 </div>
 
-                <h2>Ideation & User Flow</h2>
+                <h2>Week 3 - Iteration, Prototype, and Questionnaire</h2>
 
                 <p class="entry-description">
-                    Exploring how performers could move through the
-                    process of discovering and publishing performance
-                    locations.
+                    This week, I mainly reviewed the wireframes from last week based on the new requirements from the
+                    cilents. I
+                    identified which parts could remain and which parts needed to be modified or expanded. I then
+                    selected several features
+                    to test and created a prototype for next week's testing session. Finally, I created a questionnaire
+                    based on the goals
+                    of the prototype.
                 </p>
 
             </header>
@@ -251,38 +251,156 @@
 
             <div class="journal-content">
 
-                <h3>Initial Ideas</h3>
+                <h3>Iteration</h3>
 
                 <p>
-                    This week I began translating the earlier research
-                    into possible interface ideas and user flows.
+                    I first broke down the new requirements from the production team. Instead of only looking at what
+                    features they
+                    requested, I also considered why they needed those features and what problems those requirements
+                    were trying to solve.
+                    One requirement directly affected my previous design: due to legal restrictions, the published GPS
+                    location could no
+                    longer display an exact location and instead needed to be shown as an approximate area. Other new
+                    requirements included
+                    the Current Tip Jar and an Offline State, where some core functions still need to work without an
+                    internet connection.
+                    While reviewing these requirements, I also developed some of my own questions. For example, I
+                    started wondering how the
+                    Current Tip Jar might affect a performer's behavior during a live set.
+                    After identifying these new requirements and questions, I reconsidered the layout of the Active Live
+                    Set interface and
+                    how different types of information should be prioritized and displayed.
                 </p>
+                <div class="image-gallery">
+
+                    <img src="static/images/Week3/1.png" alt="Persona 1" class="gallery-image">
 
 
-                <figure class="journal-image journal-image-large">
-                    <img src="images/user-flow.jpg" alt="User flow diagram">
-
-                    <figcaption>
-                        Early user flow for the performer experience.
-                    </figcaption>
-                </figure>
 
 
-                <h3>Key Question</h3>
-
-                <blockquote>
-                    How might we help performers understand whether
-                    a location is suitable before publishing their
-                    performance?
-                </blockquote>
+                </div>
 
 
-                <h3>Reflection</h3>
+
+                <h3>Prototype</h3>
 
                 <p>
-                    Mapping the process visually made several unnecessary
-                    steps easier to identify and helped clarify which
-                    information should be available earlier in the flow.
+                    Based on the requirements from both last week and this week, I selected two main areas to test in
+                    the prototype:
+                </p>
+                <p>
+                    - Performance Setup Flow
+                </p>
+                <p>
+                    - Active Live Set Interface
+                </p>
+                <p>
+                    These two areas directly relate to the main requirements currently given for the performer side of
+                    the app.
+                    Other features I previously identified, such as filters, nearby performer information, and facility
+                    information, are not
+                    the main focus of this prototype. I want to first make sure that the main workflow can be understood
+                    and completed
+                    successfully before focusing on these secondary features.
+                    I then created the first version of the prototype based on these testing goals and the production
+                    requirements.
+                    This prototype is not designed to let users freely explore the entire app. Instead, it uses a more
+                    linear flow that
+                    guides users through a specific process. The purpose is to observe whether users find the process
+                    too complicated and
+                    whether the actions and information presented during the process are easy to understand.
+                </p>
+                <div class="image-gallery">
+
+                    <img src="static/images/Week3/2.png" alt="Persona 1" class="gallery-image">
+                    <img src="static/images/Week3/5.png" alt="Persona 1" class="gallery-image">
+                    <img src="static/images/Week3/6.png" alt="Persona 1" class="gallery-image">
+                    <img src="static/images/Week3/7.png" alt="Persona 1" class="gallery-image">
+                    <img src="static/images/Week3/8.png" alt="Persona 1" class="gallery-image">
+
+
+
+
+                </div>
+
+
+
+                <h3>Questionnaire</h3>
+
+                <p>
+                    Based on the prototype and the main features being tested, I created the first version of the
+                    questionnaire. The
+                    questions mainly focused on the complexity of the workflow and the readability of information.
+                    After completing the first version, I reviewed the lecture material about questionnaires again and
+                    realized that some of
+                    my questions were too broad. Even if users answered them, the results would not clearly tell me
+                    which part of the design
+                    needed improvement.
+                    For example:
+                    How clear was the information shown on the interface? Please rate it from 1 to 5.
+
+                    Even if a user gave a score of 1 or 5, I would still not know which specific information was clear
+                    or unclear.
+                    Because of this, I revised the questionnaire and created a second version with more specific
+                    questions. Each question
+                    now focuses on a particular interface element or interaction, making the results easier to connect
+                    to future design
+                    changes.
+                </p>
+                <div class="image-gallery">
+
+                    <img src="static/images/Week3/3.png" alt="Persona 1" class="gallery-image">
+                    <img src="static/images/Week3/4.png" alt="Persona 1" class="gallery-image">
+                </div>
+
+                <h3>Design Changes and Ideas</h3>
+                <p>
+                    1. Location Range Display
+                    When users confirm a performance location, the exact location will now be displayed as an
+                    approximate area.
+                    My understanding is that this requirement mainly exists to avoid legal issues rather than to make
+                    location information
+                    easier for performers or audiences to read. Because of this, I think the performer only needs to
+                    confirm that the
+                    selected location is correct. The size of the displayed area should be determined automatically by
+                    the system instead of
+                    adding another control for performers to adjust it manually.
+                </p>
+                <p>
+                    2. Tip Jar Icon
+                    At this stage, I consider the Tip Jar to be an additional feature for performers. Although
+                    performers may change their
+                    behavior depending on the amount of tips they receive, I currently consider it to have a relatively
+                    low priority on the
+                    Active Live Set interface.
+                    My current priority order is:
+                    Remaining Time → Add/Reduce Time → End Set → Tip Jar
+                    Because of this, the Tip Jar is currently displayed only as an icon, and the exact tip amount is
+                    hidden by default.
+                </p>
+                <p>
+                    3. Offline Indicator
+                    I think the Offline State should prioritize the most important basic information that performers
+                    still need while
+                    disconnected. The most important information is the remaining performance time.
+                    To make the Offline State immediately recognizable, my current idea is to hide or disable
+                    interactive functions that
+                    require an internet connection, keep the countdown timer visible, and add a clear offline status
+                    icon.
+                </p>
+                <p>
+                    4. Adding Seconds to the Timer
+                    In the previous version, the countdown timer only displayed hours and minutes.
+                    During the iteration process, I realized that this means the visible time would only noticeably
+                    change once every
+                    minute. This could make it harder for performers to quickly tell whether the timer is still running
+                    correctly.
+                    For example, if the phone or interface freezes, the user might need to wait almost a full minute
+                    before realizing that
+                    the countdown is no longer updating.
+                    Because of this, I decided to add seconds to the countdown timer so that users can receive
+                    continuous visual feedback
+                    that the timer is still running.
                 </p>
 
             </div>
@@ -294,55 +412,7 @@
         <!-- =========================
              WEEK 04
         ========================== -->
-        <section id="week-4" class="journal-entry">
 
-            <header class="entry-header">
-
-                <div class="entry-meta">
-                    <span>WEEK 04</span>
-                    <span>SEP 29 — OCT 5</span>
-                </div>
-
-                <h2>Early Wireframes</h2>
-
-                <p class="entry-description">
-                    Turning the user flow into simple interface
-                    structures that can later be tested.
-                </p>
-
-            </header>
-
-
-            <div class="journal-content">
-
-                <h3>Wireframe</h3>
-
-                <p>
-                    The first wireframes intentionally focus on
-                    information hierarchy instead of visual details.
-                </p>
-
-
-                <figure class="journal-image">
-                    <img src="images/wireframe.jpg" alt="Early wireframe">
-
-                    <figcaption>
-                        Early low-fidelity wireframe.
-                    </figcaption>
-                </figure>
-
-
-                <h3>Next Step</h3>
-
-                <p>
-                    The next stage will involve testing whether users
-                    understand the location information and whether the
-                    publishing process feels clear.
-                </p>
-
-            </div>
-
-        </section>
 
 
     </main>
