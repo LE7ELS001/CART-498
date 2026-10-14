@@ -633,8 +633,7 @@
                 <h2>Week 5 - Audience Experience & Design System</h2>
 
                 <p class="entry-description">
-                    This week, I continued exploring the audience experience and the Design System, while also making
-                    improvements to the previous performer prototype.
+                    This week, I continued exploring the audience experience and the Design System for Corner Set.
                 </p>
 
             </header>
@@ -645,8 +644,8 @@
                 <h3>Audience Experience</h3>
 
                 <p>
-                    First, based on the new requirements from the Fictional Client, I reconsidered the main goals of the
-                    audience using
+                    First, based on the new requirements from the Fictional Client, I reconsidered the main goals of
+                    audience members using
                     Corner Set. Unlike performers, who need to start and manage their performances quickly, audience
                     members are more
                     concerned with discovering nearby performances and deciding whether a performance is worth visiting.
@@ -669,72 +668,72 @@
 
 
                 <p>
-                    While developing the audience prototype, I initially noticed that although the interface worked at
-                    mobile screen sizes,
-                    its overall structure looked more like a responsive website than a mobile app. This was mainly
-                    because of the large
-                    heading and the vertical arrangement of the map, musician information, and performance list, which
-                    required users to
-                    scroll to access different parts of the interface.
+                    When developing the audience prototype, I started with preset distance filters rather than
+                    immediately adding custom
+                    distance settings or other filtering options. I believe dividing the search range from 250 m to 1.5
+                    km into four preset
+                    options could help users who do not have specific plans and spontaneously decide to watch a
+                    performance. They can
+                    quickly see what is happening nearby without spending time manually setting a search distance.
 
-                    To address this, I reorganized the layout to make the map the main interface and used a bottom sheet
-                    to display
-                    information about a selected performer. I also separated Map and List into two browsing modes.
-                    Later, I adjusted the
-                    size and position of the bottom sheet to reduce how much of the map it covered, while trying to
-                    preserve enough space
-                    for users to explore other nearby performances.
+                    When users select a performance on the map, they can immediately view basic information such as the
+                    performer's name,
+                    performance type, and music genre. My goal was to help users quickly understand what kind of
+                    performance it is and
+                    decide whether they might be interested in visiting.
 
-                    The current audience prototype simulates discovering performances on a map, filtering by distance,
-                    comparing performer
-                    information, and viewing directions. However, I still need to test whether users can understand the
-                    numbered map markers
-                    and whether the available information, such as music genre, distance, and remaining performance
-                    time, is sufficient to
-                    help them make decisions.
+                    I also considered that multiple performers might be active within the same area. Therefore, I
+                    designed a List View that
+                    allows users to browse and compare several performances at once, rather than having to tap each map
+                    marker individually.
+                    This could make it easier for them to choose a performance that interests them.
 
 
+                </p>
+
+                <p>
+                    The current audience prototype still needs further testing to determine whether users understand the
+                    numbered map
+                    markers and whether information such as music genre, distance, and remaining performance time is
+                    sufficient to support
+                    their decisions.
                 </p>
                 <div class="image-gallery">
 
                     <img src="static/images/Week5/4.png" alt="Persona 1" class="gallery-image">
                     <img src="static/images/Week5/5.png" alt="Persona 1" class="gallery-image">
                     <img src="static/images/Week5/6.png" alt="Persona 1" class="gallery-image">
+                    <img src="static/images/Week5/7.png" alt="Persona 1" class="gallery-image">
                 </div>
 
                 <h3>Design System</h3>
 
 
                 <p>
-                    After developing the initial prototypes for both Performer and Audience, I started organizing their
-                    shared visual
-                    language. Both interfaces were inspired by the visual style of music festivals, using bold,
+                    After developing the initial prototypes for both Performer and Audience, I began exploring a shared
+                    Design System.
+
+                    For the visual direction, I chose a style inspired by music festivals and street art, using bold,
                     eye-catching display
-                    typography to create a sense of energy associated with street performances. However, their colors,
-                    text sizes, and
-                    button styles were not completely consistent. Therefore, I explored creating a shared Design System
-                    that could support
-                    both experiences rather than designing two separate visual systems.
+                    typography and a combination of purple with bright colors such as lime, mint, and pink. I wanted to
+                    create an energetic
+                    visual atmosphere that reflects the spirit of street performances.
                 </p>
 
                 <p>
-                    For the visual direction, I wanted Corner Set to capture the energetic atmosphere of an outdoor
-                    music festival. I chose
-                    purple alongside bright colors such as lime, mint, and pink to create a lively, high-contrast
-                    appearance. I also
-                    considered that the app might be used outdoors during both daytime and nighttime, so I explored
-                    light and dark modes.
-                    The light mode uses light backgrounds with dark text, while the dark mode uses dark backgrounds with
-                    light text. My goal
-                    was to maintain a consistent visual identity while reducing screen glare at night and keeping
-                    information readable.
+                    At the same time, I wanted the Design System to support both the performer and audience experiences
+                    rather than creating
+                    two separate visual systems. This means that both experiences can share colors, typography, and
+                    basic UI components
+                    while using different layouts and visual priorities based on their specific needs.
 
-                    For typography, I wanted to use bold, condensed display fonts to strengthen the music festival
-                    aesthetic, while keeping
-                    body text and functional information relatively simple and easy to read. I used Arimo and Anton and
-                    examined how
-                    they worked with
-                    the overall visual style through interface samples.
+                    I also considered that the app might be used outdoors during both daytime and nighttime, so I
+                    explored light and dark
+                    modes. The light mode uses light backgrounds with dark text, while the dark mode uses dark
+                    backgrounds with light text.
+                    My goal was to maintain a consistent visual identity while reducing screen glare at night and
+                    keeping information clear
+                    and readable.
                 </p>
 
 
@@ -744,7 +743,7 @@
                     <img src="static/images/Week5/1.png" alt="Persona 1" class="gallery-image">
                     <img src="static/images/Week5/2.png" alt="Persona 1" class="gallery-image">
                     <img src="static/images/Week5/3.png" alt="Persona 1" class="gallery-image">
-                    <img src="static/images/Week5/7.png" alt="Persona 1" class="gallery-image">
+
 
 
                 </div>
