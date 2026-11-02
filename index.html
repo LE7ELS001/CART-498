@@ -54,6 +54,11 @@
                 <span>Second Prototype Test</span>
             </a>
 
+            <a href="#week-7" class="nav-link">
+                <span class="week-number">07</span>
+                <span>Feedback Reflection & Role Switching </span>
+            </a>
+
         </nav>
 
         <div class="sidebar-footer">
@@ -934,9 +939,249 @@
                     href="https://docs.google.com/forms/d/e/1FAIpQLSckIDohPG3dze1W1tRab7gK7j7vrru3DR43JQa8PvbpltrydA/viewform?usp=dialog">Questionnaire
                     2</a>
 
-            </div>
 
-        </section>
+                <!-- =========================
+                                             WEEK 07
+                                        ========================== -->
+
+                <section id="week-7" class="journal-entry">
+
+                    <header class="entry-header">
+
+                        <div class="entry-meta">
+                            <span>WEEK 07</span>
+                            <span>OCT 24 - NOV 02</span>
+                        </div>
+
+                        <h2>Week 7 - Feedback Reflection and Role Switching</h2>
+
+                        <p class="entry-description">
+                            This week, I mainly focused on reviewing the feedback from the second Design Review and
+                            thinking about how to translate
+                            it into design improvements. I also started exploring how users could switch between the
+                            Performer and Audience roles.
+                        </p>
+
+                    </header>
+
+
+                    <div class="journal-content">
+
+                        <h3>Feedback Review and Reflection</h3>
+
+                        <p>
+                            After reviewing the feedback from the Audience prototype, I found that most participants
+                            were able to understand the map
+                            information and use the distance filters. The List View was also considered useful for
+                            comparing different performances.
+                        </p>
+
+                        <p>
+                            However, some feedback pointed out problems with how users recognize and remember performers
+                            they had already viewed.
+                            Using only numbered markers and names might not provide enough information to help users
+                            distinguish different
+                            performances. Participants also expressed interest in seeing more detailed performer
+                            information, such as a profile.
+                            While considering these issues, I started questioning one of my original assumptions about
+                            the Audience experience.
+                        </p>
+
+                        <p>
+                            In my previous design, I gave Map and List Views similar importance because I assumed users
+                            would explore several
+                            performances, compare their options, and then decide which one to attend.
+
+                            However, Corner Set is designed around spontaneous street performances, which are usually
+                            free to watch. I realized that
+                            users might not always need to compare several performers before making a decision. Someone
+                            casually walking around the
+                            city might simply find a nearby performance that interests them and decide to visit it.
+                        </p>
+
+                        <p>
+                            This made me reconsider the relationship between Map, List, and Performer Information.
+
+                            Instead of treating Map and List as two equally important browsing methods, I now think the
+                            Map should be the primary
+                            discovery tool, supported by clear and recognizable performer information. Users should be
+                            able to make a quick decision
+                            based on what they see on the map, while the List View remains available as an additional
+                            tool when they want to compare
+                            multiple performances.
+                        </p>
+
+                        <p>
+                            Based on this reflection, I plan to improve how performer information is presented on the
+                            map, provide access to more
+                            detailed information when needed, and reconsider the visual priority of the List View.
+
+                            This is still a design assumption that I want to explore through further testing, rather
+                            than a conclusion that the
+                            feedback has fully confirmed.
+                        </p>
+
+
+                        <div class="image-gallery">
+                            <img src="static/images/Week7/1.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week7/2.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week7/3.png" alt="Persona 1" class="gallery-image">
+                        </div>
+
+                        <h3>Performer and Audience Role Switching</h3>
+
+
+                        <p>
+                            This week, I also started designing how users could switch between Performer and Audience
+                            modes.
+
+                            In my earlier designs, I focused on making the role-switching button available on almost
+                            every page. I was trying to
+                            find a suitable place for it without interfering with other interface elements.
+                        </p>
+
+                        <p>
+                            However, after thinking more carefully about the user flow, I began to question whether this
+                            level of accessibility was
+                            actually necessary.
+
+                            For example, when an Audience user is browsing nearby performances on the map, I think it is
+                            unlikely that they would
+                            suddenly decide to become a Performer and start a performance. Even if this happens, I
+                            assume that taking a few extra
+                            steps to switch roles would probably not be a major problem.
+                        </p>
+
+                        <P>
+                            Because of this, I decided to explore a different approach: placing the role-switching
+                            control on only a small number of
+                            pages, rather than displaying it throughout the entire app.
+
+                            I chose the initial Home pages of both Performer and Audience as the main places for role
+                            switching.
+
+                            My reasoning is that these are the first pages users encounter when entering each mode. By
+                            showing the role selector
+                            there, users can learn that switching is possible and remember where to find the control
+                            later, instead of having to
+                            guess where it might be located.
+
+                            I also assume that users who want to change roles are more likely to do so when they first
+                            open the app, rather than in
+                            the middle of another task.
+
+                            Separating the app into pages with different responsibilities also gives me a clearer
+                            structure for integrating features
+                            from the earlier prototypes. Instead of trying to fit everything into a single interface, I
+                            can organize features that
+                            received positive feedback into the pages where they are most relevant.
+                        </P>
+
+
+
+                        <h3>Home Page Layout and Information Priority</h3>
+
+                        <p>
+                            After deciding on the role-switching approach, I started exploring the layouts of the two
+                            Home pages.
+
+                            First, I decided to reserve the top area for important controls, including role switching
+                            and the Day/Night mode toggle.
+                            Since users generally scan interfaces from top to bottom, I believe placing these controls
+                            near the top can make them
+                            easier to notice and locate.
+                        </p>
+
+                        <p>
+                            For the Performer Home, I wanted to prioritize information related to managing performances.
+                            My proposed order of
+                            importance is:
+                        </p>
+
+                        <p>
+                            1. Starting a new performance.
+                        </p>
+                        <p>
+                            2. Checking upcoming scheduled performances.
+                        </p>
+                        <p>
+                            3. Reviewing past performances.
+                        </p>
+
+                        <p>
+                            Based on this priority, I made Place A Set the most prominent action, followed by sections
+                            for upcoming and past
+                            performances.
+                        </p>
+
+                        <p>
+                            For the Audience Home, I wanted to focus on helping users discover nearby performances
+                            without overwhelming them with
+                            information. Rather than presenting every detail immediately, I explored using summarized
+                            performance information
+                            organized into categories, such as instrument types and distance.
+
+                            My goal is to let users quickly understand what is available nearby and decide whether they
+                            want to explore further.
+                        </p>
+
+                        <div class="image-gallery">
+
+                            <img src="static/images/Week7/4.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week7/5.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week7/6.png" alt="Persona 1" class="gallery-image">
+                        </div>
+
+
+
+
+                        <h3>Iconography Exploration</h3>
+
+                        <p>
+                            While working on these layouts, I also discovered a new set of icons that I felt better
+                            matched Corner Set's
+                            street-inspired and energetic identity.
+
+                            Instead of replacing all the existing icons, I decided to explore using two different styles
+                            based on their purposes.
+                        </p>
+
+                        <p>
+                            For more expressive and identity-related elements, such as the Performer/Audience roles and
+                            music categories, I chose
+                            the new, more playful icons.
+                        </p>
+
+                        <p>
+                            For functional controls and system settings, such as the Day/Night mode toggle, I kept the
+                            simpler icons from my
+                            previous design.
+                        </p>
+
+                        <p>
+                            My intention is to give Corner Set a more distinctive visual identity while keeping
+                            important controls clear and
+                            recognizable.
+
+                            These decisions are still part of my design exploration. I want to continue refining the
+                            layouts and eventually test
+                            whether users can understand the page structure, find the role-switching control, and
+                            navigate between the two modes
+                            without difficulty.
+                        </p>
+
+                        <div class="image-gallery">
+
+                            <img src="static/images/Week7/7.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week7/8.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week7/9.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week7/10.png" alt="Persona 1" class="gallery-image">
+                        </div>
+
+
+                    </div>
+
+                </section>
 
 
 
