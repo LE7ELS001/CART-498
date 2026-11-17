@@ -64,6 +64,12 @@
                 <span>New Client Requirements & Design Iteration </span>
             </a>
 
+            <a href="#week-9" class="nav-link">
+                <span class="week-number">09</span>
+                <span>Prototype Integration & A/B Testing Preparation </span>
+            </a>
+
+
         </nav>
 
         <div class="sidebar-footer">
@@ -1384,6 +1390,306 @@
 
                             <img src="static/images/Week8/10.png" alt="Persona 1" class="gallery-image">
                             <img src="static/images/Week8/11.png" alt="Persona 1" class="gallery-image">
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+                <!-- =========================
+                                                                                 WEEK 09
+                                                                            ========================== -->
+
+                <section id="week-9" class="journal-entry">
+
+                    <header class="entry-header">
+
+                        <div class="entry-meta">
+                            <span>WEEK 09</span>
+                            <span>NOV 09 - NOV 16</span>
+                        </div>
+
+                        <h2>Week 9 - Prototype Integration & A/B Testing Preparation</h2>
+
+                        <p class="entry-description">
+                            This week, I focused on combining the different parts of my prototype, defining the three
+                            A/B testing topics, and
+                            preparing the questionnaire for the third Design Review.
+                        </p>
+
+                    </header>
+
+
+                    <div class="journal-content">
+
+                        <h3>Prototype Integration</h3>
+
+                        <p>
+                            My previous two usability tests mainly focused on whether individual features were
+                            effective, rather than evaluating the
+                            overall experience of the application.
+                        </p>
+
+                        <p>
+                            I considered this a potential risk because combining different parts of the application
+                            could introduce problems that
+                            were not apparent when designing individual screens. For example, transitions between
+                            different pages might require
+                            additional buttons, while changes to the information provided by one feature might require
+                            corresponding updates
+                            elsewhere. These issues could also make the integration process take longer than expected.
+                        </p>
+
+                        <p>
+                            Therefore, for this round of testing, I decided to focus on the overall experience of the
+                            prototype.
+                        </p>
+
+                        <p>
+                            Initially, I did not have a clear idea of what to compare in the A/B test. Instead of
+                            deciding on the testing topics
+                            immediately, I started connecting the different parts of the prototype, hoping that problems
+                            discovered during this
+                            process would help me identify meaningful design alternatives.
+                        </p>
+
+                        <p>
+                            During integration, I encountered several navigation problems. For example, when designing
+                            individual screens, I had
+                            considered how users would navigate from one page to another, but not necessarily whether
+                            they should return to the
+                            previous page or the main page afterward. Another question was whether users should remain
+                            on the corresponding page
+                            when switching between the Audience and Performer roles or automatically return to the main
+                            page.
+
+                            These problems helped me reconsider some of my previous design decisions from a broader
+                            perspective.
+                        </p>
+
+
+                        <div class="image-gallery">
+                            <img src="static/images/Week9/1.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week9/2.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week9/3.png" alt="Persona 1" class="gallery-image">
+                        </div>
+
+                        <h3>A/B Test 1 — Map/List Navigation</h3>
+
+
+                        <p>
+                            Last week, I decided that List View should remain an optional part of the user flow, and I
+                            still believe this is
+                            appropriate.
+                        </p>
+
+                        <p>
+                            However, during integration, I realized that although I had designed two different ways to
+                            access List View, both had
+                            potential discoverability issues.
+                        </p>
+
+                        <p>
+                            The first method allows users to drag the bottom panel upward, but the panel does not
+                            contain a label indicating that it
+                            provides access to List View. The second method provides a List button, but the button only
+                            appears after a performer is
+                            selected on the map.
+
+                            My original assumption was that users would explore several performers before deciding to
+                            compare them in a list.
+                            However, if users do not select any performers, they may never discover the List button.
+                            This became the first topic of my A/B test.
+                        </p>
+
+
+                        <p>
+                            <strong>Version A:</strong> An expandable bottom panel and a contextual List button.
+                        </p>
+                        <p>
+                            <strong>Version B:</strong> An always-visible Map/List switch.
+                        </p>
+
+                        <p>
+                            I want to understand whether making the navigation control permanently visible improves
+                            discoverability or whether it
+                            introduces unnecessary visual clutter to the map interface.
+                        </p>
+
+                        <div class="image-gallery">
+
+                            <img src="static/images/Week9/5.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week9/5-2.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week9/6.png" alt="Persona 1" class="gallery-image">
+
+                        </div>
+
+
+
+
+                        <h3>A/B Test 2 — Audience Count Visualization</h3>
+
+                        <p>
+                            After implementing the animated ripples around performer icons, I noticed that when multiple
+                            ripples were displayed
+                            together, they could be at different stages of their animations. This made it more difficult
+                            to immediately determine
+                            which performance had a larger audience.
+
+                            To address this issue, I decided to test whether displaying the exact audience count
+                            alongside the animated ripples
+                            would improve information clarity.
+                        </p>
+
+                        <p>
+                            <strong>Version A:</strong> Only Animated ripples.
+                        </p>
+                        <p>
+                            <strong>Version B:</strong> Animated ripples with numerical audience counts below the
+                            performer icons.
+                        </p>
+
+                        <p>
+                            I want to understand whether the additional numbers make audience sizes easier to compare or
+                            whether they introduce
+                            redundant information and make the map feel too cluttered. I also want to find out whether
+                            users prefer to see exact
+                            audience numbers directly on the map.
+                        </p>
+
+
+                        <div class="image-gallery">
+
+                            <img src="static/images/Week9/7.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week9/8.png" alt="Persona 1" class="gallery-image">
+
+                        </div>
+
+
+
+
+                        <h3>A/B Test 3 — Photography and Visual Identity</h3>
+
+                        <p>
+                            A/B Test 3 — Photography and Visual Identity
+
+                            After combining the different screens, I realized that the visual style of the application
+                            could feel much stronger when
+                            experienced as a complete product rather than as individual screens.
+
+                            This encouraged me to explore whether further emphasizing the existing street-art aesthetic
+                            would make the application
+                            more distinctive and memorable or whether it would reduce the readability of visual
+                            information.
+
+                            As a relatively time-efficient approach, I experimented with applying Figma's built-in
+                            shader effects to the performer
+                            photographs.
+                        </p>
+
+                        <p>
+                            <strong>Version A:</strong> Original, realistic performer photographs.
+                        </p>
+                        <P>
+                            <strong>Version B:</strong> Highly stylized street-art photographs.
+                        </P>
+
+                        <p>
+                            I decided to keep the photographs of performance locations realistic because they serve a
+                            different purpose. Performers
+                            need to clearly understand the physical environment when selecting a location, while
+                            performer photographs allow more
+                            room for artistic expression.
+
+                            Through this test, I hope to determine which photographic approach better supports the
+                            overall visual identity of Corner
+                            Set without compromising usability.
+                        </p>
+
+
+                        <div class="image-gallery">
+
+                            <img src="static/images/Week9/4-2.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week9/4.png" alt="Persona 1" class="gallery-image">
+                        </div>
+
+
+
+                        <h3>Task Design and Data Collection</h3>
+
+                        <p>
+                            For this Design Review, I decided to provide participants with two tasks covering both the
+                            Audience and Performer
+                            experiences.
+                        </p>
+                        <p>
+                            <strong>Task 1 — Audience:</strong> Find Hubble-Lemaître's performance through the Browse
+                            page and open
+                            the page where users can tip the performer.
+                        </p>
+                        <p>
+                            <strong>Task 2 — Performer:</strong> Start a performance and continue until reaching the
+                            active performance countdown screen.
+                        </p>
+
+                        <p>
+                            When designing these tasks, I intentionally avoided making them directly related to the
+                            specific differences between the
+                            A/B versions. Instead, I wanted participants to encounter these design features naturally
+                            while completing other tasks.
+
+                            For example, if I specifically asked participants to find the List button, they would
+                            actively look for it, making it
+                            less likely that they would miss it. However, in a real usage scenario, users might not
+                            notice the feature at all.
+                            Directly asking them to find it would therefore make it difficult to evaluate its actual
+                            discoverability.
+                        </p>
+
+                        <p>
+                            Since my prototypes are web-based, I also decided to implement a testing panel that records
+                            quantitative data during the
+                            testing process, including the number of clicks, task completion time, and completion status
+                            for each task.
+
+                            I hope this data will help me better understand the interaction process rather than relying
+                            entirely on participants'
+                            subjective feedback.
+                        </p>
+
+                        <div class="image-gallery">
+
+                            <img src="static/images/Week9/9.png" alt="Persona 1" class="gallery-image">
+                        </div>
+
+                        <h2>Questionnaire Design</h2>
+                        <p>
+                            I divided the questionnaire into two main parts:
+                        </p>
+                        <p>
+                            <strong>A/B Testing Feedback:</strong> Questions focusing on the differences between the two
+                            prototype versions, including audience count
+                            visualization, Map/List navigation, and photography style.
+                        </p>
+                        <p>
+                            <strong>Overall Usability Feedback:</strong> Questions evaluating the shared features and
+                            the overall experience of the integrated prototype, including role
+                            switching and the clarity of information during performance setup.
+                        </p>
+                        <p>
+                            Each participant will experience only one version of the prototype. I used branching logic
+                            in the questionnaire to
+                            provide different questions depending on which version each participant tested.
+
+                            This allows me to collect more specific feedback on each design alternative while evaluating
+                            the shared features
+                            consistently across both versions.
+                        </p>
+
+                        <div class="image-gallery">
+
+                            <img src="static/images/Week9/10.png" alt="Persona 1" class="gallery-image">
                         </div>
 
 
