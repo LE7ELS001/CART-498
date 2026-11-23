@@ -69,6 +69,11 @@
                 <span>Prototype Integration & A/B Testing Preparation </span>
             </a>
 
+            <a href="#week-10" class="nav-link">
+                <span class="week-number">10</span>
+                <span>Responding to Design Review 3 Feedback </span>
+            </a>
+
 
         </nav>
 
@@ -1691,6 +1696,209 @@
 
                             <img src="static/images/Week9/10.png" alt="Persona 1" class="gallery-image">
                         </div>
+
+
+                    </div>
+
+                </section>
+
+                <!-- =========================
+                                                                                                 WEEK 10
+                                                                                            ========================== -->
+
+                <section id="week-10" class="journal-entry">
+
+                    <header class="entry-header">
+
+                        <div class="entry-meta">
+                            <span>WEEK 10</span>
+                            <span>NOV 16 - NOV 23</span>
+                        </div>
+
+                        <h2>Week 10 - Responding to Design Review 3 Feedback</h2>
+
+                        <p class="entry-description">
+                            This week, I focused on reviewing the feedback from the third Design Review and making
+                            changes to the prototype based on
+                            the results.
+
+                            The A/B test focused on three main design decisions: whether the Map/List button should
+                            always be visible, how performer
+                            photos should be styled, and how audience size should be presented on the map.
+                        </p>
+
+                    </header>
+
+
+                    <div class="journal-content">
+
+                        <h3>Map/List Button Visibility</h3>
+
+                        <p>
+                            Based on the feedback, participants generally preferred having the Map/List button always
+                            visible. In the version where
+                            the button was hidden until a performer was selected, some participants did not discover or
+                            use the List feature at all.
+                        </p>
+
+                        <p>
+                            I think this design might work for users who are already familiar with the app, but it
+                            creates a discoverability problem
+                            for first-time users. A tutorial might help explain the hidden interaction, but for now, I
+                            believe keeping the button
+                            visible is a simpler and more reliable solution.
+
+                            Therefore, I decided to use the always-visible Map/List button in the Audience Browse
+                            screen.
+                        </p>
+
+                        <p>
+                            For the Performer Browse screen, I also adjusted the button's position and visual style. I
+                            wanted the Audience and
+                            Performer interfaces to feel slightly different so that users who switch between both roles
+                            can more easily recognize
+                            which interface they are currently using.
+
+                            Unlike the Audience map, the Performer map does not include animated audience ripples. This
+                            gives me more flexibility to
+                            place a floating List button in the lower-right area without competing with those
+                            animations.
+                        </p>
+
+                        <div class="image-gallery">
+                            <img src="static/images/Week10/6.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week10/6-2.png" alt="Persona 1" class="gallery-image">
+
+                        </div>
+
+                        <h3>Performer Photo Styles</h3>
+
+
+                        <p>
+                            The second issue was the visual style of performer photos.
+
+                            Based on the feedback, participants generally did not prefer completely stylized photos.
+                            They preferred realistic
+                            photographs or images that included some artistic effects while still maintaining a sense of
+                            realism.
+
+                            This made me reconsider how much visual stylization should be applied to the performers
+                            themselves.
+                        </p>
+
+                        <p>
+                            My solution was to keep the performers recognizable while using more expressive backgrounds
+                            to communicate the app's
+                            artistic identity. I kept the performers relatively realistic, added outlines around them,
+                            and experimented with
+                            colorful, street-art-inspired backgrounds.
+
+                            I also decided to use different levels of visual stylization depending on the purpose of
+                            each screen.
+                        </p>
+
+                        <p>
+                            <strong>Performer Cards</strong> are one of the most frequently seen elements in the app.
+                            Since users
+                            encounter them while browsing, I
+                            wanted them to create a stronger visual impression. Most of the important information is
+                            placed below the image, so I
+                            can use a more expressive background without significantly affecting the readability of that
+                            information.
+                        </p>
+
+
+                        <p>
+                            <strong>Performer Details</strong> are only opened after a user becomes interested in a
+                            particular performer. At this point, I think providing clear
+                            information becomes more important than creating a strong visual impression. Therefore, I
+                            kept the performer outline to
+                            maintain visual consistency with the card, but simplified the background.
+                        </p>
+                        <p>
+                            I followed a similar approach for the <strong>Live Performance / Tipping</strong> screen.
+                            This screen contains important information and interactive elements, especially the tipping
+                            options and
+                            confirmation button. I wanted the performer image to remain recognizable without making the
+                            surrounding interface
+                            difficult to read or drawing too much attention away from the actions.
+                        </p>
+
+                        <p>
+                            Through these changes, I tried to make the app's visual style more distinctive without
+                            applying the same level of
+                            decoration to every screen.
+                        </p>
+
+                        <div class="image-gallery">
+
+                            <img src="static/images/Week10/1.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week10/2.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week10/3.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week10/4.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week10/5.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week10/7.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week10/8.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week10/9.png" alt="Persona 1" class="gallery-image">
+
+                        </div>
+
+
+
+
+                        <h3>Audience Size on the Map</h3>
+
+                        <p>
+                            The third issue was how to communicate audience size on the Browse map.
+
+                            In the original version, I used animated ripples around performer icons to represent
+                            audience size. However, some
+                            participants did not understand that the ripples were related to the number of people
+                            watching a performance. Others
+                            felt that the ripple effect was too subtle and easy to overlook.
+                        </p>
+
+                        <p>
+                            In the version with numerical audience labels, the feedback suggested that displaying the
+                            numbers did not make the map
+                            feel overly cluttered. However, the audience count labels were considered too small.
+                        </p>
+
+                        <p>
+                            After considering both sets of feedback, I decided to combine the two approaches.
+
+                            I added a numerical audience count directly below each performer icon and increased the size
+                            of the label to improve
+                            readability. Placing the number immediately beneath the icon also creates a clearer visual
+                            connection between the
+                            performer and their audience size.
+
+                            At the same time, I strengthened the ripple animation by increasing its thickness, expansion
+                            range, and frequency to
+                            make it easier to notice.
+                        </p>
+
+                        <p>
+                            However, the purpose of the ripple effect has now changed slightly. Since the actual
+                            audience count is displayed
+                            directly, the ripples no longer need to be the primary way of communicating audience size.
+                            Instead, they serve as a
+                            supporting visual cue that makes the map feel more active and helps communicate the
+                            atmosphere around a performance.
+                        </p>
+
+
+                        <div class="image-gallery">
+
+                            <img src="static/images/Week10/10.png" alt="Persona 1" class="gallery-image">
+                            <img src="static/images/Week10/11.png" alt="Persona 1" class="gallery-image">
+
+                        </div>
+
+
+
+
+
 
 
                     </div>
